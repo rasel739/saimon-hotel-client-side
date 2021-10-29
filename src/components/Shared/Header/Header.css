@@ -1,0 +1,39 @@
+.hotel-nev{
+    margin-right:1rem;
+    text-decoration: none;
+    font-size:1.2rem;
+    color:black;
+    border-left:2px solid #078080;
+    padding-left:.5rem;
+}
+
+.hotel-nev:last-child{
+ border-right:none;
+
+}
+.hotel-nev:first-child{
+    border-left:none;
+}
+.hotel-nev:last-child:focus{
+ 
+ border-top:2px solid orange;
+ border-left:2px solid orange;
+}
+.hotel-nev:first-child:focus{  
+ border-top:2px solid #078080;
+ border-left:2px solid #078080;
+ 
+}
+
+.hotel-nev:focus{
+   border-top:2px solid #078080;
+   color:#078080;
+}
+
+.header-bg{
+    background-color:#f8f5f2;
+}
+
+.title-nav{
+    font-size:1.8rem;
+}

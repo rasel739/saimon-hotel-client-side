@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import Accommodation from '../Accommodation/Accommodation';
+import AddFacilities from '../AddFacilities/AddFacilities';
 import BookNow from '../BookNow/BookNow';
 import ErrorPage from '../ErrorPage/ErrorPage';
 import Gallery from '../Gallery/Gallery';
 import Home from '../Home/Home';
+import AddRoom from '../Home/OurRooms/AddRoom/AddRoom';
 import MyAccount from '../MyAccount/MyAccount';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
@@ -15,7 +17,7 @@ const Routed = () => {
         <BrowserRouter>
             <Header></Header>
             <Switch>
-                <Route path="/">
+                <Route exact path="/">
                     <Home></Home>
                 </Route>
                 <Route path="/home">
@@ -32,6 +34,12 @@ const Routed = () => {
                 </Route>
                 <Route path="/my-account">
                     <MyAccount></MyAccount>
+                </Route>
+                <Route path="/add-facilities">
+                    <AddFacilities></AddFacilities>
+                </Route>
+                <Route path="/add-room">
+                    <AddRoom></AddRoom>
                 </Route>
                 <Route path="*">
                     <ErrorPage></ErrorPage>

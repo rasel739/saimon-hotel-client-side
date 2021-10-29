@@ -1,0 +1,17 @@
+.hotel-main{
+    background-image: url(./img/hotel-banner-img.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+   
+
+}
+
+.book-icon{
+    color:#078080;
+    font-size:1.5rem;
+
+}
+
+.book-btn{
+    background-color:#078080;
+}

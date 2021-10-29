@@ -1,0 +1,50 @@
+[
+    {
+        "image":"http://themes.quitenicestuff2.com/sohohotel/demo5/wp-content/uploads/2021/10/04-accommodation-featured.jpg",
+        "name":"Deluxe Queen Room",
+        "capacity":"2 Adults",
+        "size":35,
+        "view":"City",
+        "price":300
+    },
+    {
+        "image":"http://themes.quitenicestuff2.com/sohohotel/demo5/wp-content/uploads/2021/10/05-accommodation-featured.jpg",
+        "name":"King Ensuite Room",
+        "capacity":"3 Adults",
+        "size":40,
+        "view":"City",
+        "price":350
+    },
+    {
+        "image":"http://themes.quitenicestuff2.com/sohohotel/demo5/wp-content/uploads/2021/10/06-accommodation-featured.jpg",
+        "name":"Queen Room",
+        "capacity":"4 Adults",
+        "size":70,
+        "view":"City",
+        "price":650
+    },
+    {
+        "image":"https://media.istockphoto.com/photos/interior-of-a-modern-luxury-hotel-double-bed-bedroom-picture-id1163498940?b=1&k=20&m=1163498940&s=170667a&w=0&h=5TRSRlxZVnU_hVpPTjcbok7xg8Zrl4gmntmkyuAKVSM=",
+        "name":"Deluxe Ensuite Room",
+        "capacity":"1 Adults",
+        "size":17,
+        "view":"City",
+        "price":150
+    },
+    {
+        "image":"https://media.istockphoto.com/photos/seaview-bedroom-picture-id492189224?b=1&k=20&m=492189224&s=170667a&w=0&h=ajYLEoa64OQANoWwkws5UD46CLDgLR_ibE48S4zmLMk=",
+        "name":" Ensuite Room",
+        "capacity":"3 Adults",
+        "size":75,
+        "view":"City",
+        "price":900
+    },
+    {
+        "image":"https://images.unsplash.com/photo-1587985064135-0366536eab42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name":" King Room",
+        "capacity":"1 Adults",
+        "size":45,
+        "view":"City",
+        "price":500
+    }
+]

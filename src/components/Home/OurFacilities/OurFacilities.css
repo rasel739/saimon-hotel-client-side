@@ -1,0 +1,15 @@
+.facilities{
+    position: relative;
+}
+
+.facilities>h2:after{
+    content:'';
+    width:4rem;
+    height:.2rem;
+    background-color:#078080;
+    position: absolute;
+    bottom:-.5rem;
+    left:48%;
+    border-radius: 1rem;
+
+}
