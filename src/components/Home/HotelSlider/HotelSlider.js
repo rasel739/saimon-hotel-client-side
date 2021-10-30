@@ -22,7 +22,7 @@ const HotelSlider = () => {
                   <Col xs={12} md={12} lg={3}>
                     <div className="d-flex align-items-center bg-white justify-content-center p-1 booking">
                       <div className="me-2 book-icon">
-                        <i class="far fa-calendar"></i>
+                        <i className="far fa-calendar"></i>
                       </div>
                       <div className="">
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -35,7 +35,7 @@ const HotelSlider = () => {
                   <Col xs={12} md={12} lg={3}>
                     <div className="d-flex align-items-center bg-white justify-content-center p-1 booking">
                       <div className="me-2 book-icon">
-                        <i class="far fa-calendar"></i>
+                        <i className="far fa-calendar"></i>
                       </div>
                       <div className="">
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -48,7 +48,7 @@ const HotelSlider = () => {
                   <Col xs={12} md={12} lg={3}>
                     <div className="d-flex align-items-center bg-white justify-content-center p-1 booking h-100">
                       <div className="me-2 book-icon">
-                        <i class="fas fa-user-friends"></i>
+                        <i className="fas fa-user-friends"></i>
                       </div>
                       <div className="">
                         <Form.Select aria-label="Default select example">

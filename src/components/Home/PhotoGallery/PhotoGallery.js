@@ -18,7 +18,7 @@ const PhotoGallery = () => {
                 </p>
                 <Button>
                   <span className="me-2">
-                    <i class="far fa-images"></i>
+                    <i className="far fa-images"></i>
                   </span>
                   Open Gallery
                 </Button>

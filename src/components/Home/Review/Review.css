@@ -1,0 +1,19 @@
+
+.user-img{
+    width:5rem;
+    height:5rem;
+    margin:auto;
+}
+
+.user-img>img{
+    border-radius:100%;
+    
+}
+
+.review-container{
+    background-image:url('./review-img/review-img.jfif');
+    background-repeat:no-repeat;
+    background-size: cover;
+
+}
+

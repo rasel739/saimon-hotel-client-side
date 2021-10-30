@@ -1,0 +1,22 @@
+.error-bg{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    background-color:black;
+    z-index: 20000;
+    
+}
+
+.error{
+    margin-top:10%;
+}
+.error>h1{
+    font-size:10rem;
+
+}
+
+.error>h6{
+    font-size:5rem;
+    color:aquamarine;
+}
