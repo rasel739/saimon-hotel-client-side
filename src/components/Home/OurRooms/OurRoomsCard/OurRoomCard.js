@@ -11,17 +11,21 @@ const OurRoomCard = ({ room }) => {
   const {user} = useAuth()
   
   const handleAddToCart = () => {
-
+    const randomId = Math.floor(Math.random() * 100);
+    
     const data = room;
-    data.Pending = 'Pending'
-    data.Confirmed = 'Confirmed'
+    data.status = 'Pending';
     data.email = user?.email;
-      
-    fetch("http://localhost:5000/addRoom", {
+    data.userPhoto = user?.photoURL;
+    data.userName = user?.displayName;
+    data._id = data._id + randomId;
+   
+    fetch("https://saimon-hotel.herokuapp.com/addRoom", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
-    });
+    })
+      .catch((error) => alert("Error! " + error.message));
       
     }
     return (
@@ -56,7 +60,7 @@ const OurRoomCard = ({ room }) => {
 
             <Button onClick={handleAddToCart} className="me-2">From ${price} / Night</Button>
 
-            <Link to={`/room-details/${room._id}`}>
+            <Link to={`/room-details/${room?._id}`}>
               <Button>
                 Room View {" "}
                 <i className="fas fa-chevron-right"></i>{" "}

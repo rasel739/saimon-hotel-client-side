@@ -1,56 +1,72 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
-import './MyOrder.css';
+import { Button, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './AllOrder.css';
 
-const MyOrder = ({ order }) => {
-    
- 
-  
-    console.log(order)
+const AllOrder = ({ allorder }) => {
+
+
     return (
       <Col>
         <div className="card mb-3 w-100">
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src={order?.image}
+                src={allorder?.image}
                 className="img-fluid rounded-start"
                 alt="..."
               />
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">{order?.name}</h5>
+                <h5 className="card-title">{allorder?.name}</h5>
                 <div className="d-flex justify-content-center">
                   <p className="me-2">
                     <span className="me-2 room-icon">
                       <i className="fas fa-user"></i>
                     </span>
                     <span className="me-2">Capacity :</span>
-                    {order?.capacity}
+                    {allorder?.capacity}
                   </p>
                   <p className="me-2">
                     <span className="me-2 room-icon">
                       <i className="fas fa-ruler-combined"></i>
                     </span>
                     <span className="me-2">Size :</span>
-                    {order?.size}sqm
+                    {allorder?.size}sqm
                   </p>
                   <p className="me-2">
                     <span className="me-2 room-icon">
                       <i className="fas fa-binoculars"></i>
                     </span>
                     <span className="me-2">View :</span>
-                    {order?.view}
+                    {allorder?.view}
                   </p>
                 </div>
                 <p className="card-text">
-                  {order.status === "Pending" ? (
-                    <small className="text-danger">{order?.status}...</small>
+                  {allorder.status === "Pending" ? (
+                    <small className="text-danger">{allorder?.status}...</small>
                   ) : (
-                    <small className="text-success">{order?.status}</small>
+                    <small className="text-success">{allorder?.status}</small>
                   )}
                 </p>
+              </div>
+              <div className="">
+                <span className="me-2">
+                  <img
+                    src={allorder?.userPhoto}
+                    alt=""
+                    className="allorder-user-img"
+                  />
+                </span>
+                <span className="me-2">Name: {allorder?.userName}</span>
+                <span className="">Email: {allorder?.email}</span>
+              </div>
+              <div className="">
+                <Link to={`/update-user-status/${allorder?._id}`}>
+                  <Button className="btn btn-primary me-5">Update</Button>
+                </Link>
+                <Button className="btn btn-danger">Delete</Button>
               </div>
             </div>
           </div>
@@ -59,4 +75,4 @@ const MyOrder = ({ order }) => {
     );
 };
 
-export default MyOrder;
+export default AllOrder;

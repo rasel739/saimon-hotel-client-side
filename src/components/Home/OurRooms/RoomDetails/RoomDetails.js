@@ -13,9 +13,9 @@ const RoomDetails = () => {
     const { image, name, size,  view, capacity } = singleRoom;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/singleRoom/${roomId}`)
-            .then(res => res.json())
-        .then(data => setSingleRoom(data))
+        fetch(`https://saimon-hotel.herokuapp.com/singleRoom/${roomId}`)
+          .then((res) => res.json())
+          .then((data) => setSingleRoom(data));
 
     },[roomId])
     

@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 const AddRoom = () => {
      const { register, handleSubmit } = useForm();
      const onSubmit = (data) => {
-       fetch("http://localhost:5000/ourRoom", {
+       fetch("https://saimon-hotel.herokuapp.com/ourRoom", {
          method: "POST",
          headers: { "content-type": "application/json" },
          body: JSON.stringify(data),
@@ -22,7 +22,7 @@ const AddRoom = () => {
         <Container>
           <div className="w-50 mx-auto facilities-form p-5">
             <div className="">
-              <h2 className="mb-3">Add Facilities</h2>
+              <h2 className="mb-3">Add Room</h2>
             </div>
             <Form onSubmit={handleSubmit(onSubmit)}>
               <Form.Group className="mb-3" controlId="formBasicEmail">

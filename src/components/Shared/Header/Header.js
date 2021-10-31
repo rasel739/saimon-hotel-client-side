@@ -30,8 +30,8 @@ const Header = () => {
                 <NavLink to="/book-now" className="hotel-nev">
                   Book Now
                 </NavLink>
-                <NavLink to="/add-room" className="hotel-nev">
-                  Add Room
+                <NavLink to="/adminPanel" className="hotel-nev">
+                  Admin Panel
                 </NavLink>
               </Nav>
               <Form className="d-flex me-5">

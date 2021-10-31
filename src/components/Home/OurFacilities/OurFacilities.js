@@ -9,9 +9,9 @@ const OurFacilities = () => {
     const [facilities, setFacilities] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/ourFacilities")
-            .then(res => res.json())
-        .then(data => setFacilities(data))
+        fetch("https://saimon-hotel.herokuapp.com/ourFacilities")
+          .then((res) => res.json())
+          .then((data) => setFacilities(data));
     },[])
     return (
       <Container fluid className="pt-5 pb-5 header-bg">

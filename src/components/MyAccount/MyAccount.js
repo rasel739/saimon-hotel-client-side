@@ -19,9 +19,12 @@ const MyAccount = () => {
   const email = user?.email;
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrderRoom/${email}`)
+    fetch(`https://saimon-hotel.herokuapp.com/myOrderRoom/${email}`)
       .then((res) => res.json())
-      .then((data) => setOrder(data));
+      .then((data) => {
+        setOrder(data)
+       
+      });
     },[email])
     return (
       <Container fluid className="pt-5 pb-5">
@@ -30,13 +33,15 @@ const MyAccount = () => {
             <Col xs={12} md={12} lg={4}>
               <Card style={{ width: "18rem", padding: "2rem" }}>
                 <h2 className="">My Profile</h2>
-                {user?.photoURL?(
+                {user?.photoURL ? (
                   <Card.Img
                     variant="top"
                     src={user?.photoURL}
                     className="img-fluid rounded-pill"
                   />
-                ) : <i class="fas fa-user text-primary display-3"></i>}
+                ) : (
+                  <i class="fas fa-user text-primary display-3"></i>
+                )}
                 <Card.Body>
                   <Card.Title>{user?.displayName}</Card.Title>
                 </Card.Body>

@@ -10,17 +10,17 @@ const AddFacilities = () => {
         } = useForm();
     const onSubmit = (data) => {
            
-        fetch("http://localhost:5000/facilities", {
-            method: "POST",
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify(data)
-        }).then(res => res.json())
-            .then(result => {
-                
-                if (result) {
-                    alert('Facilities add Successfully')
-                }
+        fetch("https://saimon-hotel.herokuapp.com/facilities", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(data),
         })
+          .then((res) => res.json())
+          .then((result) => {
+            if (result) {
+              alert("Facilities add Successfully");
+            }
+          });
 
         }
     return (
